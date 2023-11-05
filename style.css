@@ -1,6 +1,105 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap');
 /* Styles */
 
 * {
-    background: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    background: #1f1f1f;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    height: 7.5vh;
+    width: 100%;
+    background: #5c5c5c;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.brand-name{
+    width: 50%;
+}
+
+.brand-intro{
+    width: 30%;
+}
+
+.brand-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.brand-buttons div{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px 25px;
+    border-radius: 50px;
+    line-height: 1.2;
+    transition: 0.3s all ease;
+}
+
+.brand-name-text{
+    font-size: 48px;
+}
+
+.brand-name-text span{
+    text-transform: uppercase;
+}
+
+.brand-intro{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.brand-image{
+    width: 100%;
+    height: 75vh;
+    /* background: url(Resources/images/home.jpg); */
+    /* background-size: ; */
+}
+
+.brand-image img {
+    width: 100%;
+}
+
+.brand-buttons div:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid white;
+    font-weight: 400;
+    cursor: default;
 }
