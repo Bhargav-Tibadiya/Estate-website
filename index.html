@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -14,33 +20,53 @@
 
         <!-- Adding Placeholder for NavBar -->
         <div class="navbar">
-            <div class="nav-left"></div>
-            <div class="nav-right"></div>
+            <div class="nav-left">URBANOVA</div>
+
+            <div class="nav-right">
+                <div class="dropdown-lang">
+                    <span>EN</span>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+
+                <div class="brand-button">
+                    Contact Us
+                </div>
+
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
         </div>
-        
+
+        <hr style="margin: 1rem 0;" />
+
         <!-- Main page // Home Page -->
 
-        <div class="hero">
+        <section class="hero">
             <div class="headline">
                 <div class="brand-name">
 
-                    <div class="brand-buttons">
-                        <div>Sales</div>
-                        <div>Rental</div>
-                        <div>Commercial</div>
-                        <div>Commercial Lease</div>
+                    <div class="brand-buttons-group">
+                        <div class="brand-button">Sales</div>
+                        <div class="brand-button">Rental</div>
+                        <div class="brand-button">Commercial</div>
+                        <div class="brand-button">Commercial Lease</div>
                     </div>
 
                     <div class="brand-name-text">
                         Welcome to, <span>Urbanova</span>
-                    </div> 
+                    </div>
 
                 </div>
 
-                <div class="brand-intro"> 
-                    
+                <div class="brand-intro">
+
                     <p>
-                        Experience the future of real estate with us and discover how we're redefining the industry one technological leap at a time. Join us at Urbanova, where your dreams of a cutting-edge real estate experience are finally realized
+                        Experience the future of real estate with us and discover how we're redefining the industry one
+                        technological leap at a time. Join us at Urbanova, where your dreams of a cutting-edge real
+                        estate experience are finally realized
                     </p>
 
                 </div>
@@ -50,7 +76,23 @@
             <div class="brand-image">
                 <img src="Resources/images/home.jpg" alt="Villa Image">
             </div>
-        </div>
+        </section>
+
+
+        <!-- Main Page // About Section -->
+
+        <section class="about">
+            <div class="about_intro">
+                <div class="intro_description">
+                    Our curated selection of modern houses reflects <span>contemporary elegance</span> . With expert
+                    guidance from our
+                    team, you can not only <span> find your ideal house</span>
+                    but also transform it into a stunning masterpiece of <span> modern interior </span>design.
+                </div>
+                <h1>ABOUT URBANOVA</h1>
+            </div>
+        </section>
+
     </div>
 
     <script src="main.js"></script>
