@@ -19,7 +19,7 @@ body{
 }
 
 .container{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding: 10px 50px;
 }
@@ -27,6 +27,7 @@ body{
 .hero{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .navbar{
@@ -118,7 +119,7 @@ body{
     gap: 10px;
 }
 
-/* edited brand-buttons to make it */
+/* edited brand-buttons to make it reuseable */
 .brand-button{
     font-weight: 400;
     display: flex;
@@ -155,6 +156,7 @@ body{
 
 .brand-image img {
     width: 100%;
+    height: 70vh;
 }
 
 .brand-button:hover{
@@ -163,4 +165,16 @@ body{
     border: 1px solid white;
     font-weight: 400;
     cursor: default;
+}
+
+
+/* About section starts */
+
+section.about {
+
+}
+
+.about_intro {
+    display: flex;
+    flex-direction: row;
 }
