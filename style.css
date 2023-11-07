@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 /* Styles */
 
 * {
@@ -6,7 +9,8 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Cairo', sans-serif; */
     font-weight: 300;
 }
 
@@ -26,9 +30,59 @@ body{
 }
 
 .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 7.5vh;
     width: 100%;
-    background: #5c5c5c;
+    /* background: #5c5c5c; */
+    background: transparent;
+}
+
+.nav-left {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    
+}
+
+.nav-right {
+    /* width: 60%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dropdown-lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .6rem;
+    cursor: pointer;
+}
+
+.nav-right > .brand-button {
+    height: 5vh;
+    width: 10rem;
+}
+
+.nav-right > .hamburger-menu {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+
+.nav-right  .hamburger-menu  span {
+    background-color: #807e7e;
+    width: 100%;
+    height: 2px;
 }
 
 .hero{
@@ -54,12 +108,18 @@ body{
     width: 30%;
 }
 
-.brand-buttons{
+.brand-intro p {
+    text-indent: 3rem;
+    font-size: 1.3rem;
+}
+
+.brand-buttons-group{
     display: flex;
     gap: 10px;
 }
 
-.brand-buttons div{
+/* edited brand-buttons to make it */
+.brand-button{
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -70,6 +130,7 @@ body{
     border-radius: 50px;
     line-height: 1.2;
     transition: 0.3s all ease;
+    cursor: pointer !important;
 }
 
 .brand-name-text{
@@ -96,7 +157,7 @@ body{
     width: 100%;
 }
 
-.brand-buttons div:hover{
+.brand-button:hover{
     background: #fff;
     color: #000;
     border: 1px solid white;
