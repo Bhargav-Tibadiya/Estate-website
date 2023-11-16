@@ -44,6 +44,9 @@ body{
     font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -171,10 +174,76 @@ body{
 /* About section starts */
 
 section.about {
-
+padding: 25px 0;
 }
 
-.about_intro {
+.about-intro {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.intro-description{
+    width: 55%;
+    /* border: 1px solid red; */
+    font-size: 32px;
+}
+
+.intro-text{
+    /* width: 35%; */
+    font-size: 42px;
+    display: flex;
+}
+
+
+.about-details{
+    padding: 50px 0;
+    display: flex;
+}
+
+
+.about-details-left{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 40%;
+}
+
+.about-details-left div:nth-child(2){
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-details-left div:nth-child(2) span{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.about-details-left div:nth-child(3){
+    width: 300px;
+    height: 300px;
+}
+
+.about-details-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('Resources/images/home2.1.jpg');
+    background-size: 90%;
+    background-repeat: no-repeat; */
+    width: 60%;
+}
+
+
+.about-details-right img{
+    width: 90%;
 }
